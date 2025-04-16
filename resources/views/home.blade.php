@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>do the thing</title>
     @vite('resources/css/app.css')
 </head>
-<body class="flex flex-col h-screen place-content-center mx-auto min-w-sm max-w-5xl text-pretty px-4">
+<body class="flex flex-col gap-32 h-screen place-content-center mx-auto min-w-sm max-w-5xl text-pretty px-4">
     <header class="place-items-center">
-        <h1 class="font-black text-6xl md:text-7xl">do the thing</h1>
-        <p class="font-semibold text-xl md:text-2xl">find motivation to just start doing the thing</p>
+        <h1 class="font-black text-center text-6xl lg:text-9xl">do the thing</h1>
+        <p class="font-semibold text-xl text-center lg:text-3xl">find motivation to just start doing the thing</p>
     </header>
     <main class="place-items-center">
         <div>
-            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, id quod. Aut debitis exercitationem illum itaque molestias quos rem repellat.</p>
-            <p class="text-right">-Author</p>
+            <p class="text-left text-xl lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, id quod. Aut debitis exercitationem illum itaque molestias quos rem repellat.</p>
+            <p class="text-right text-lg lg:text-xl">-Author</p>
         </div>
     </main>
     <footer class="text-zinc-500">
-        <div class="flex flex-row justify-end gap-4">
+        <div class="flex flex-row justify-end gap-x-4">
             <a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
