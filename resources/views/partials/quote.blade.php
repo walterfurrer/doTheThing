@@ -1,13 +1,34 @@
 <?php
 
 $quotes = [
-    "Have your fun and once you have your fill, let those fingers dance on that keyboard!",
-    "If you look for balance you won't find it. Just create the balance instead, or leave things unbalanced for a bit. Once you make good progress, balance it once again.",
-    "Keep building, keep failing, keep learning. Rinse and repeat.",
-    "Execution of a task is more valuable than the knowledge to execute without th emovement behind it.",
-    "Winning satisfies hard work, but never ever stop improving your craft.",
-    "When you care too much, you push yourself for perfection. When you don't care, mediocrity is accepted.",
-    "It's not that you're not good enough, you're just not good enough yet. Turn rejection into an opportunity to learn."
+    [
+        "text" => "Have your fun and once you have your fill, let those fingers dance on that keyboard!",
+        "author" => "Danny Thompson"
+    ],
+    [
+        "text" => "If you look for balance you won't find it. Just create the balance instead, or leave things unbalanced for a bit. Once you make good progress, balance it once again.",
+        "author" => "Danny Thompson"
+    ],
+    [
+        "text" => "Keep building, keep failing, keep learning. Rinse and repeat.",
+        "author" => "Shashi Lo"
+    ],
+    [
+        "text" => "Execution of a task is more valuable than the knowledge to execute without the movement behind it.",
+        "author" => "Danny Thompson"
+    ],
+    [
+        "text" => "Winning satisfies hard work, but never ever stop improving your craft.",
+        "author" => "Shashi Lo"
+    ],
+    [
+        "text" => "When you care too much, you push yourself for perfection. When you don't care, mediocrity is accepted.",
+        "author" => "Shashi Lo"
+    ],
+    [
+        "text" => "It's not that you're not good enough, you're just not good enough yet. Turn rejection into an opportunity to learn.",
+        "author" => "Shashi Lo"
+    ],
 ];
 
 // Initialize session if not already started
@@ -29,13 +50,14 @@ if (isset($_SESSION['previous_quote_index']) && count($quotes) > 1) {
 // Store the current index for the next page load
 $_SESSION['previous_quote_index'] = $randomIndex;
 
-// Get the quote text
+// Get the quote and author
 $randomQuote = $quotes[$randomIndex];
 
 ?>
 
 <main class="place-items-center">
     <div>
-        <p class="text-left text-xl lg:text-2xl">{{ $randomQuote }}</p>
+        <p class="text-left text-xl lg:text-2xl mb-2">{{ $randomQuote['text'] }}</p>
+        <p class="text-right text-lg italic text-zinc-600">— {{ $randomQuote['author'] }}</p>
     </div>
 </main>
