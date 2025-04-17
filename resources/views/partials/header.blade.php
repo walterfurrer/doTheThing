@@ -1,4 +1,4 @@
 <header class="place-items-center">
-    <h1 class="font-black text-center text-6xl lg:text-9xl">do the thing</h1>
-    <p class="font-semibold text-xl text-center lg:text-3xl">find motivation to just start doing the thing</p>
+    <h1 class="font-black text-center bg-gradient-to-r from-green-300 via-emerald-400 to-teal-500 text-transparent bg-clip-text text-5xl lg:text-9xl">do the thing</h1>
+    <p class="text-zinc-400 text-center text-lg lg:text-2xl">find motivation to just start doing the thing</p>
 </header>
