@@ -2,29 +2,19 @@
 <p>do the thing is my first project using Laravel and PHP. It was inspired by the lovely folks in the LGT Discord who pushed me to just start building instead of getting caught up in tutorials or reading docs.</p>
 <p>In addition, there are days where we have a hard time doing something, even if it is something that we enjoy! I hope to continue to add motivating quotes from those around me that I can turn to when I need help "doing the thing".</p>
 
+**Link to project:** [https://dothething.laravel.cloud/](https://dothething.laravel.cloud/)
+
 ![do-the-thing](https://github.com/user-attachments/assets/269ea28f-91cb-42ab-aa88-5f01b5003da3)
 
+<h2>How It's Made:</h2>
 
-<!--
-How It's Made:
-Tech used: HTML, CSS, JavaScript, Framework of choice
+Tech used: HTML, CSS, PHP, Laravel, TailwindCSS
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write something. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+I first wrote everything in HTML in order to get the basic page structure/layout figured out. Since this a very simple SPA it didn't take long. However, I did want to work on creating/maintaining best practices, so I took various parts of the page (Header, Main, Footer) and broke those out into partials that I could then `@include` in my `home.blade.php` view.
 
-Optimizations
-(optional)
+It was a lot of fun creating the PHP logic in [resources/views/partials/quote.blade.php](resources/views/partials/quote.blade.php). I didn't want the user to be able to get the same random quote back to back, so creating a session and generating a new index that was different than the previous one was fun to work out.
 
-You don't have to include this section but interviewers love that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are GREAT to bring up in interviews and you can use this section as reference when studying for technical interviews!
+<h2>Future Implementations</h2>
 
-Lessons Learned:
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those whoa this is awesome or wow I actually did it! moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
-
-Examples:
-Take a look at these couple examples that I have in my own portfolio:
-
-Palettable: https://github.com/alecortega/palettable
-
-Twitter Battle: https://github.com/alecortega/twitter-battle
-
-Patch Panel: https://github.com/alecortega/patch-panel
--->
+1. I want to move the quotes to a database and learn to pull the data from there and output it onto the page. I was reading up on it a bit but decided to not mess with it *just* yet.
+2. Add JavaScript. I dislike having the entire page refresh currently in order to get a new quote. I plan on making it so the "need more motivation?" button will only refresh the quote section of the page.
