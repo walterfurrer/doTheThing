@@ -7,12 +7,15 @@
 
     @vite('resources/css/app.css')
 </head>
-<body class="flex flex-col gap-32 h-dvh place-content-center mx-auto min-w-sm max-w-5xl text-pretty px-4">
+<body class="flex flex-col gap-12 place-content-center h-dvh mx-auto px-8 min-w-sm max-w-5xl text-pretty md:gap-18 lg:gap-24 lg:h-vh lg:gap-32">
     @include('partials.header')
     @include('partials.quote')
-    <a href="/" class="mx-auto">
-        <button class="bg-zinc-700 px-8 py-4 rounded-lg duration-300 hover:bg-emerald-600 hover:scale-115 hover:duration-300">need more motivation?</button>
-    </a>
+    <span class="mx-auto">
+        <a href="/">
+            <button class="bg-zinc-700 px-4 py-2 rounded-lg duration-300 outline outline-2 outline-emerald-500 hover:bg-emerald-500 hover:outline-transparent hover:scale-115 hover:duration-300 md:px-8 py-4">need more motivation?
+            </button>
+        </a>
+    </span>
     @include('partials.footer')
 </body>
 </html>

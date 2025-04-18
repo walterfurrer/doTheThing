@@ -55,9 +55,9 @@ $randomQuote = $quotes[$randomIndex];
 
 ?>
 
-<main class="place-items-center">
+<main class="place-items-center h-36 mx-auto">
     <div>
-        <p class=" text-left font-semibold text-lg lg:text-3xl mb-2">{{ $randomQuote['text'] }}</p>
+        <p class="text-left font-semibold text-md lg:text-3xl mb-2">{{ $randomQuote['text'] }}</p>
         <p class="text-right text-lg italic text-zinc-600">— {{ $randomQuote['author'] }}</p>
     </div>
 </main>
