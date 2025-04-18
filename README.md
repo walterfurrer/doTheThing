@@ -6,7 +6,7 @@
 
 ![do-the-thing](https://github.com/user-attachments/assets/269ea28f-91cb-42ab-aa88-5f01b5003da3)
 
-<h2>How It's Made:</h2>
+<h2>How It's Built:</h2>
 
 Tech used: HTML, CSS, PHP, Laravel, TailwindCSS
 
