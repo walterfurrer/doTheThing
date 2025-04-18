@@ -18,3 +18,4 @@ It was a lot of fun creating the PHP logic in [resources/views/partials/quote.bl
 
 1. I want to move the quotes to a database and learn to pull the data from there and output it onto the page. I was reading up on it a bit but decided to not mess with it *just* yet.
 2. Add JavaScript. I dislike having the entire page refresh currently in order to get a new quote. I plan on making it so the "need more motivation?" button will only refresh the quote section of the page.
+3. Create a light theme and then create a toggle for that. I just feel like it'd be good practice to implement something like that.
