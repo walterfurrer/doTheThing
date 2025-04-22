@@ -1,61 +1,21 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>do the thing</h1>
+<p>do the thing is my first project using Laravel and PHP. It was inspired by the lovely folks in the LGT Discord who pushed me to just start building instead of getting caught up in tutorials or reading docs.</p>
+<p>In addition, there are days where we have a hard time doing something, even if it is something that we enjoy! I hope to continue to add motivating quotes from those around me that I can turn to when I need help "doing the thing".</p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Link to project:** [https://dothething.laravel.cloud/](https://dothething.laravel.cloud/)
 
-## About Laravel
+![do-the-thing](https://github.com/user-attachments/assets/269ea28f-91cb-42ab-aa88-5f01b5003da3)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>How It's Built:</h2>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Tech used: HTML, CSS, PHP, Laravel, TailwindCSS
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+I first wrote everything in HTML in order to get the basic page structure/layout figured out. Since this a very simple SPA it didn't take long. However, I did want to work on creating/maintaining best practices, so I took various parts of the page (Header, Main, Footer) and broke those out into partials that I could then `@include` in my `home.blade.php` view.
 
-## Learning Laravel
+It was a lot of fun creating the PHP logic in [resources/views/partials/quote.blade.php](resources/views/partials/quote.blade.php). I didn't want the user to be able to get the same random quote back to back, so creating a session and generating a new index that was different than the previous one was fun to work out.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h2>Future Implementations</h2>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. I want to move the quotes to a database and learn to pull the data from there and output it onto the page. I was reading up on it a bit but decided to not mess with it *just* yet.
+2. Add JavaScript. I dislike having the entire page refresh currently in order to get a new quote. I plan on making it so the "need more motivation?" button will only refresh the quote section of the page.
+3. Create a light theme and then create a toggle for that. I just feel like it'd be good practice to implement something like that.
