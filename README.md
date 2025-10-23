@@ -2,8 +2,6 @@
 <p>do the thing is my first project using Laravel and PHP. It was inspired by the lovely folks in the LGT Discord who pushed me to just start building instead of getting caught up in tutorials or reading docs.</p>
 <p>In addition, there are days where we have a hard time doing something, even if it is something that we enjoy! I hope to continue to add motivating quotes from those around me that I can turn to when I need help "doing the thing".</p>
 
-**Link to project:** [https://dothething.laravel.cloud/](https://dothething.laravel.cloud/)
-
 ![do-the-thing](https://github.com/user-attachments/assets/269ea28f-91cb-42ab-aa88-5f01b5003da3)
 
 <h2>How It's Built:</h2>
